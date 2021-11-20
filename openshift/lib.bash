@@ -9,7 +9,8 @@ function go.get-tool {
   if ! [ -f "${1}" ]; then
     replace="${3:-}"
     tmp_dir="$(mktemp -d)"
-    trap 'rm -rf ${tmp_dir}' EXIT
+    # shellcheck disable=SC2064
+    trap "rm -rf ${tmp_dir}" EXIT
     cd "$tmp_dir"
     go mod init tmp
     if [ -n "${replace:-}" ]; then

@@ -10,5 +10,5 @@ go.get-tool "${project_dir}/build/tools/deviate" \
   github.com/cardil/deviate/cmd/deviate@v0 \
   github.com/shurcooL/graphql=github.com/cli/shurcooL-graphql@v0.0.0-20200707151639-0f7232a2bf7e
 
-"${project_dir}/build/tools/deviate" update \
+"${project_dir}/build/tools/deviate" sync \
   --config "${project_dir}/.deviate.yaml"
