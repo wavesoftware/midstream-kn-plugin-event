@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"knative.dev/kn-plugin-event/cmd/kn-event/cmd"
+	"gotest.tools/v3/assert"
+	"knative.dev/kn-plugin-event/internal/cli/cmd"
 )
 
 func TestRootInvalidCommand(t *testing.T) {
@@ -20,5 +20,5 @@ func TestRootInvalidCommand(t *testing.T) {
 	c.Out(buf)
 	c.ExecuteOrFail()
 
-	assert.True(t, called)
+	assert.Check(t, called)
 }
