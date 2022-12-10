@@ -13,6 +13,7 @@ require (
 	github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.6.0
+	github.com/stretchr/testify v1.8.0
 	github.com/thediveo/enumflag v0.10.0
 	github.com/wavesoftware/go-commandline v1.0.0
 	github.com/wavesoftware/go-ensure v1.0.0
@@ -23,12 +24,12 @@ require (
 	k8s.io/api v0.25.2
 	k8s.io/apimachinery v0.25.2
 	k8s.io/client-go v0.25.2
-	knative.dev/client v0.34.1-0.20221018194610-0b99fc58d67b
+	knative.dev/client v0.35.0
 	knative.dev/eventing v0.35.0
 	knative.dev/hack v0.0.0-20221010154335-3fdc50b9c24a
 	knative.dev/pkg v0.0.0-20221011175852-714b7630a836
 	knative.dev/reconciler-test v0.0.0-20221017014457-090970c9ca3c
-	knative.dev/serving v0.34.1-0.20221018142810-e82287df024c
+	knative.dev/serving v0.35.0
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -170,7 +171,6 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.13.0 // indirect
-	github.com/stretchr/testify v1.8.0 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
 	github.com/theupdateframework/go-tuf v0.5.0 // indirect
 	github.com/titanous/rocacheck v0.0.0-20171023193734-afe73141d399 // indirect

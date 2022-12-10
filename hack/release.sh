@@ -24,7 +24,7 @@ source "$(dirname "$0")/../vendor/knative.dev/hack/release.sh"
 function build_release {
   export ARTIFACTS_TO_PUBLISH
   ./mage clean publish
-  ARTIFACTS_TO_PUBLISH="$(tr '\r\n' ' ' < build/_output/artifacts.list)"
+  ARTIFACTS_TO_PUBLISH="$(tr '\r\n' ' ' < "${ARTIFACTS}/artifacts.list")"
   # TODO: Remove digest calculation once resolved
   #       https://github.com/wavesoftware/go-magetasks/issues/18
   calculate_checksums
@@ -32,13 +32,13 @@ function build_release {
 
 function calculate_checksums {
   local checksums file
-  checksums="$(realpath build/_output/checksums.txt)"
+  checksums="${ARTIFACTS}/checksums.txt"
   rm -f "${checksums}"
   while read -r file; do
     pushd "$(dirname "$file")" >/dev/null
     sha256sum "$(basename "$file")" >> "${checksums}"
     popd >/dev/null
-  done < build/_output/artifacts.list
+  done < "${ARTIFACTS}/artifacts.list"
   ARTIFACTS_TO_PUBLISH="${ARTIFACTS_TO_PUBLISH} ${checksums}"
 }
 
