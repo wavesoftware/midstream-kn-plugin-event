@@ -963,8 +963,8 @@ k8s.io/kube-openapi v0.0.0-20240903163716-9e1beecbcb38 h1:1dWzkmJrrprYvjGwh9kEUx
 k8s.io/kube-openapi v0.0.0-20240903163716-9e1beecbcb38/go.mod h1:coRQXBK9NxO98XUv3ZD6AK3xzHCxV6+b7lrquKwaKzA=
 k8s.io/utils v0.0.0-20240921022957-49e7df575cb6 h1:MDF6h2H/h4tbzmtIKTuctcwZmY0tY9mD9fNT47QO6HI=
 k8s.io/utils v0.0.0-20240921022957-49e7df575cb6/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
-knative.dev/client/pkg v0.0.0-20250122145611-f73472454667 h1:y8q5gShQdsQY5JwNvME6x1TFSGDWvirvHw9g0voJbJI=
-knative.dev/client/pkg v0.0.0-20250122145611-f73472454667/go.mod h1:JvnyTAqZaqkbCkwsCDt5IOlKD42pZSiL6KSGwLUL8/I=
+knative.dev/client/pkg v0.0.0-20250128014102-7dc2a9249f56 h1:dipAdQkzuHg7CGQUrrgqsDtGuxMdCAlUCDrdbFbOVUY=
+knative.dev/client/pkg v0.0.0-20250128014102-7dc2a9249f56/go.mod h1:JvnyTAqZaqkbCkwsCDt5IOlKD42pZSiL6KSGwLUL8/I=
 knative.dev/eventing v0.44.0 h1:AGH9wp6Vp0LNRXWnJ4oIVURUNOBsq5/xNm95ZsxZBFs=
 knative.dev/eventing v0.44.0/go.mod h1:0H5SItbyPWJLXoGXwBxX7yqvg6t2enQsQbLKyzWoezQ=
 knative.dev/hack v0.0.0-20250116150306-c142b4835bc5 h1:CwLVoSblWmfaIkgRFX2LcEA0uYZo+nOhdPatsz+QL9w=
